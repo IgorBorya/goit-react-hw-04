@@ -7,7 +7,7 @@ const ImageGallery = ({ images, onImageClick }) => {
     <ul className={s.gallery}>
       {images.map((image) => (
         <li className={s.galleryItem} key={image.id}>
-          <ImageCard image={image} onImageClick={onImageClick} />
+          <ImageCard image={image} onClick={onImageClick} />
         </li>
       ))}
     </ul>
